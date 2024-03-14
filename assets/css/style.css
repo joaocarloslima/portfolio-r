@@ -54,3 +54,47 @@ header h2{
 #texto-apresentacao p {
     font-size: 1.75rem;
 }
+
+#secao-projetos {
+    height: 100vh;
+    background-color: #252739;
+}
+
+#secao-projetos ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    height: 100%;
+}
+
+#secao-projetos li {
+    list-style: none;
+}
+
+.card {
+    max-height: 420px;
+    max-width: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card .image { 
+    height: 100%;
+    width: 100%;
+}
+
+.image img { 
+    height: 100%;
+    width: 100%;
+}
+
+.card .texto {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .texto {
+    opacity: 1;
+}
