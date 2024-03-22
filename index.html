@@ -53,6 +53,55 @@
         </ul>
     </section>
 
+    <section id="secao-orcamento">
+        <h2>Faça um orçamento</h2>
+
+        <form action="">
+            <div class="campo linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+            </div>
+            
+            <div class="campo">
+                <label for="qtde">Qtde de pág.</label>
+                <input type="number" id="qtde" min="1">
+            </div>
+            
+            <div class="campo">
+                <label for="tipo">Tipo de Site</label>
+                <select name="tipo" id="tipo">
+                    <option value="1">Estático</option>
+                    <option value="2">Dinâmico</option>
+                </select>
+            </div>
+
+            <div class="campo linha">
+                <label for="">Precisa de protótipo?</label>
+                <input name="prototipo" type="radio" id="prototipo_sim">
+                <label for="prototipo_sim">sim, preciso</label>
+                <input name="prototipo" type="radio" id="prototipo_nao">
+                <label for="prototipo_nao">não, já tenho</label>
+            </div>
+                
+            <input type="checkbox" id="js">
+            <label for="js">tem automação com JS</label>
+
+            <label for="prazo">Prazo</label>
+            <input type="range">
+
+            <input type="text" list="estados">
+
+            <datalist id="estados">
+                <option value="">RJ</option>
+                <option value="">SP</option>
+                <option value="">MG</option>
+                <option value="">BA</option>
+                <option value="">PE</option>
+            </datalist>
+
+        </form>
+    </section>
+
 
 
 </body>
