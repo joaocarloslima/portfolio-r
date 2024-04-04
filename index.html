@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
     
@@ -64,7 +65,7 @@
             
             <div class="campo">
                 <label for="qtde">Qtde de pág.</label>
-                <input type="number" id="qtde" min="1">
+                <input type="number" id="qtde" min="1" value="1">
             </div>
             
             <div class="campo">
@@ -77,29 +78,29 @@
 
             <div class="campo linha">
                 <label for="">Precisa de protótipo?</label>
-                <input name="prototipo" type="radio" id="prototipo_sim">
-                <label for="prototipo_sim">sim, preciso</label>
-                <input name="prototipo" type="radio" id="prototipo_nao">
-                <label for="prototipo_nao">não, já tenho</label>
+                <div>
+                    <input name="prototipo" type="radio" id="prototipo_sim">
+                    <label for="prototipo_sim">sim, preciso</label>
+                </div>
+                <div>
+                    <input name="prototipo" type="radio" id="prototipo_nao">
+                    <label for="prototipo_nao">não, já tenho</label>
+                </div>
             </div>
-                
-            <input type="checkbox" id="js">
-            <label for="js">tem automação com JS</label>
+            
+            <div class="linha">
+                <input type="checkbox" id="js">
+                <label for="js">tem automação com JS</label>
+            </div>
 
-            <label for="prazo">Prazo</label>
-            <input type="range">
-
-            <input type="text" list="estados">
-
-            <datalist id="estados">
-                <option value="">RJ</option>
-                <option value="">SP</option>
-                <option value="">MG</option>
-                <option value="">BA</option>
-                <option value="">PE</option>
-            </datalist>
+            <div class="campo linha">
+                <label for="prazo">Prazo</label>
+                <input type="range">
+            </div>
 
         </form>
+        
+        <span id="orcamento">R$ 500,00</span>
     </section>
 
 
